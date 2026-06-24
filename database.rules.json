@@ -1,0 +1,13 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "sync": {
+      "$syncId": {
+        ".read": true,
+        ".write": true,
+        ".validate": "newData.hasChild('updatedAt')"
+      }
+    }
+  }
+}
